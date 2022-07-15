@@ -46,6 +46,8 @@ I do not know of any at this time.
 
 The main goal is to make it more discoverable to beginners and reducing the boilerplate required to spawn lines without any third party plugins.
 
+Lines are covered in the Primitive Shapes RFC, but since they require a different Material to be rendered compared to every other shape, I believe it needs to be separated. Of course, the Mesh creation part could be reused once that RFC gets merged.
+
 ## Prior art
 
 - PR implementing most of this RFC in an example: <https://github.com/bevyengine/bevy/pull/5319>
@@ -63,6 +65,7 @@ These examples are more of a showcase of what this api could eventually be used 
 - These lines won't support any kind of thickness setting, is this acceptable?
 - Should the wireframes use a `LineMaterial`?
   - It would be possible, but the wireframe material needs to override the `bias.slope_scale` which isn't required by the `LineMaterial`. Also it currently doesn't have a customizable color, but there's a PR to add it. See: <https://github.com/bevyengine/bevy/pull/5303>
+- Should this wait on the Primitive Shapes RFC?
 
 ## Future possibilities
 
