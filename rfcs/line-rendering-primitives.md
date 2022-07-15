@@ -36,6 +36,7 @@ If you want a wireframe, you can use a `LineMaterial` on a `Mesh` using `Primiti
   - have a uniform `Color` to have colored lines
   - It only needs a really simple fragment shader to output the color
 - Create a `LineBundle` that is similar to the `PbrBundle` but expects a `LineMaterial` instead of a `StandardMaterial`
+- Duplicate all the necessary parts to support the same thing for `Mesh2d` and `Material2d`
 
 ## Drawbacks
 
